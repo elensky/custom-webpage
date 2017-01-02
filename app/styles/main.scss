@@ -1,6 +1,51 @@
 $icon-font-path: '../fonts/';
 
+$font-size-base: 17px;
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$bg-color: #000;
+$main-text-color: #fff;
+
+$footer-height: 100px;
+
+
+$main-text-font-size: 19px;
+
+$main-menu-font-size: 28px;
+$footer-menu-font-size: 24px;
+
+$big-text-font-size: 46px;
+$big-text-font-weight: 700;
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: $bg-color;
+  margin-bottom: $footer-height;
+  color: $main-text-color;
+}
+
+.content {
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+}
+
+// Text
+
+.big-text {
+  font-size: $big-text-font-size;
+  font-weight: $big-text-font-weight;
+}
