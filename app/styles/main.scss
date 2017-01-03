@@ -10,6 +10,8 @@ $text-color: #fff;
 // endbower
 
 $second-color: #FFD200;
+$third-color: #e62217;
+
 $hover-line-height: 7px;
 
 $footer-height: 100px;
@@ -31,6 +33,13 @@ html {
 
 body {
   margin-bottom: $footer-height;
+  a {
+    color: $text-color;
+    &:hover, &:focus {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
 }
 
 .content {
@@ -51,6 +60,14 @@ body {
   font-weight: $big-text-font-weight;
 }
 
+// #custom-general-info
+
+.video-link {
+  &:hover, &:focus {
+    color: $third-color;
+  }
+}
+
 // Menu
 
 .menu {
@@ -62,13 +79,9 @@ body {
     }
     a {
       display: block;
-      color: $text-color;
       margin-bottom: $hover-line-height;
       padding-top: .2em;
       padding-bottom: .2em;
-      &:hover, &:focus {
-        text-decoration: none;
-      }
       &:hover, &.active {
         border-bottom: $hover-line-height $second-color solid;
         margin-bottom: 0;
