@@ -1,18 +1,25 @@
 $icon-font-path: '../fonts/';
 
+//------ CUSTOM COLORS -------//
+
+$second-color: #FFD200;
+$third-color: #e62217;
+
+//----------------------------//
+
 $body-bg: #000;
 
 $font-size-base: 17px;
 $text-color: #fff;
 
+$state-warning-text: $second-color;
+$state-danger-text: $third-color;
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$second-color: #FFD200;
-$third-color: #e62217;
-
-$hover-line-height: 7px;
+$brand-line-height: 7px;
 
 $footer-height: 100px;
 
@@ -51,6 +58,14 @@ body {
   bottom: 0;
   width: 100%;
   height: $footer-height;
+  .copyright {
+    @extend .brand-line;
+    padding: 12px 0;
+  }
+}
+
+.brand-line {
+  border-bottom: $brand-line-height $second-color solid;
 }
 
 // Text
@@ -79,11 +94,11 @@ body {
     }
     a {
       display: block;
-      margin-bottom: $hover-line-height;
+      margin-bottom: $brand-line-height;
       padding-top: .2em;
       padding-bottom: .2em;
       &:hover, &.active {
-        border-bottom: $hover-line-height $second-color solid;
+        @extend .brand-line;
         margin-bottom: 0;
       }
     }
