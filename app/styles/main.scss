@@ -2,18 +2,20 @@ $icon-font-path: '../fonts/';
 
 //------ CUSTOM COLORS -------//
 
-$second-color: #FFD200;
-$third-color: #e62217;
+$warning-color: #FFD200;
+$danger-color: #e62217;
+$muted-color: #666;
 
 //----------------------------//
 
 $body-bg: #000;
 
+$font-weight-base: 500;
 $font-size-base: 17px;
 $text-color: #fff;
 
-$state-warning-text: $second-color;
-$state-danger-text: $third-color;
+$state-warning-text: $warning-color;
+$state-danger-text: $danger-color;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -21,7 +23,7 @@ $state-danger-text: $third-color;
 
 $brand-line-height: 7px;
 
-$footer-height: 100px;
+$footer-height: 200px;
 
 
 $main-text-font-size: 19px;
@@ -36,6 +38,7 @@ $big-text-font-weight: 700;
 html {
   position: relative;
   min-height: 100%;
+  font-weight: $font-weight-base;
 }
 
 body {
@@ -60,12 +63,18 @@ body {
   height: $footer-height;
   .copyright {
     @extend .brand-line;
-    padding: 12px 0;
+    padding: .8em 0;
+  }
+  .footer-menu {
+    padding-top: 20px;
+    .menu-name {
+      height: 1.2em;
+    }
   }
 }
 
 .brand-line {
-  border-bottom: $brand-line-height $second-color solid;
+  border-bottom: $brand-line-height $warning-color solid;
 }
 
 // Text
@@ -79,7 +88,7 @@ body {
 
 .video-link {
   &:hover, &:focus {
-    color: $third-color;
+    color: $danger-color;
   }
 }
 
@@ -93,9 +102,8 @@ body {
       margin-left: 1.5em;
     }
     a {
-      display: block;
+      display: inline-block;
       margin-bottom: $brand-line-height;
-      padding-top: .2em;
       padding-bottom: .2em;
       &:hover, &.active {
         @extend .brand-line;
@@ -105,8 +113,24 @@ body {
   }
 }
 
+.separator-menu {
+  @extend .menu;
+  font-size: $footer-menu-font-size;
+  li {
+    & + li {
+      margin-left: 0;
+      &:before {
+        content: "/";
+        display: inline-block;
+        margin-right: .2em;
+        color: $muted-color;
+      }
+    }
+  }
+
+}
+
 .main-menu {
   @extend .menu;
   font-size: $main-menu-font-size;
-  font-weight: 500;
 }
