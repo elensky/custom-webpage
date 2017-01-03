@@ -1,13 +1,16 @@
 $icon-font-path: '../fonts/';
 
+$body-bg: #000;
+
 $font-size-base: 17px;
+$text-color: #fff;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-$bg-color: #000;
-$main-text-color: #fff;
+$second-color: #FFD200;
+$hover-line-height: 7px;
 
 $footer-height: 100px;
 
@@ -27,9 +30,7 @@ html {
 }
 
 body {
-  background-color: $bg-color;
   margin-bottom: $footer-height;
-  color: $main-text-color;
 }
 
 .content {
@@ -48,4 +49,36 @@ body {
 .big-text {
   font-size: $big-text-font-size;
   font-weight: $big-text-font-weight;
+}
+
+// Menu
+
+.menu {
+  @extend .list-unstyled;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 1.5em;
+    }
+    a {
+      display: block;
+      color: $text-color;
+      margin-bottom: $hover-line-height;
+      padding-top: .2em;
+      padding-bottom: .2em;
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+      &:hover, &.active {
+        border-bottom: $hover-line-height $second-color solid;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.main-menu {
+  @extend .menu;
+  font-size: $main-menu-font-size;
+  font-weight: 500;
 }
