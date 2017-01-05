@@ -11,6 +11,7 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -28,23 +29,47 @@
     <![endif]-->
 
     <div class="main">
+      <div id="customModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/v/fV-AAu7yQgg&t=26s?autoplay=1" class="embed-responsive-item" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="header">
         <div class="container-fluid">
-          <ul class="main-menu">
-            <li><a href="#">shop</a></li>
-            <li><a href="#">about us</a></li>
-            <li><a href="#">contact us</a></li>
-          </ul>
+            <div class="row">
+              <div class="col-sm-8 custom-top-menu">
+                <div class="custom-brand"></div>
+                <ul class="main-menu">
+                  <li><a href="#">shop</a></li>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">contact us</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-4 custom-top-menu">
+                <div class="right-item"><div class="soc-icon icon-vk"></div><div class="soc-icon icon-fb"></div><div class="soc-icon icon-inst"></div></div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="content">
         <div class="container">
+          <div class="custom-logo"></div>
           <div id="custom-general-info">
             <h2 class="big-text">
               This is a template for a simple marketing or informational website. It includes a large callout called a
               jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
             </h2>
-            <a href="#" class="big-text video-link">showreel</a>
+            <a href="#" class="big-text video-link" data-toggle="modal" data-target="#customModal"><i class="fa fa-youtube-play text-danger"></i>&nbsp;&nbsp;showreel</a>
           </div>
 
           <br><br>

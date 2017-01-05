@@ -189,5 +189,76 @@ body {
     }
   }
 }
+.custom-top-menu {
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+  .custom-brand {
+    background: url(../images/1927.png) no-repeat;
+    height: 125px;
+    width: 130px;
+    margin: 0 60px;
+    display: inline-block;
+    &:hover {
+      background: url(../images/2303.png) no-repeat;
+    }
+  }
+.soc-icon {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  margin-right: 20px;
+  &.icon-vk {
+    background: url(../images/2865.png) no-repeat;
+    &:hover {
+      background: url(../images/2897.png) no-repeat;
+    }
+  }
+  &.icon-fb {
+    background: url(../images/2866.png) no-repeat;
+    &:hover {
+      background: url(../images/2898.png) no-repeat;
+    }
+  }
+  &.icon-inst {
+    background: url(../images/2867.jpg) no-repeat;
+    &:hover {
+      background: url(../images/2899.jpg) no-repeat;
+    }
+  }
+  &:last-child {
+    margin-right: 60px;
+  }
+}
+.right-item {
+  margin-left: auto;
+}
+.custom-logo {
+  position: absolute;
+}
+.modal-content {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  .modal-header {
+    border-bottom: none;
+    margin-bottom: 30px;
+      .close {
+        opacity: 1;
+        background: url(../images/3599.png) no-repeat;
+        height: 48px;
+        width: 48px;
+        position: relative;
+        right: -35px;
+        &:hover {
+          background: url(../images/3754.png) no-repeat;
+        }
+      }
+  }
+}
+
+
 
 
