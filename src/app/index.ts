@@ -4,6 +4,8 @@ import {UIView, UIRouterModule} from 'ui-router-ng2';
 import {STATES, MyUIRouterConfig} from './routes';
 
 import {MainComponent} from './main';
+import {HeaderComponent} from './header';
+import {PageComponent} from './page';
 
 @NgModule({
   imports: [
@@ -11,7 +13,9 @@ import {MainComponent} from './main';
     UIRouterModule.forRoot({states: STATES, configClass: MyUIRouterConfig})
   ],
   declarations: [
-    MainComponent
+    PageComponent,
+    MainComponent,
+    HeaderComponent
   ],
   bootstrap: [UIView]
 })
