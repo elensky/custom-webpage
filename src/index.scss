@@ -136,11 +136,17 @@ body {
   font-size: $main-menu-font-size;
 }
 
+.stickers-list {
+  font-size: 0;
+}
+
 .sticker-block {
-  width: 292px;
+  width: 285px;
   color: $muted-color;
   height: 370px;
   position: relative;
+  display: inline-block;
+  font-size: $font-size-base;
   .sticker-image {
     background-image: url(./images/4647.png);
     background-position: center 20px;
