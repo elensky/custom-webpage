@@ -6,7 +6,7 @@ module.exports = function () {
       baseDir: [
         conf.paths.tmp,
         conf.paths.src,
-        'data'
+        conf.paths.data
       ]
     },
     open: false

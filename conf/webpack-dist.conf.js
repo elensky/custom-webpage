@@ -41,6 +41,10 @@ module.exports = {
         loaders: [
           'html-loader'
         ]
+      },
+      {
+        test: /\.(woff2?|ttf|eot|svg|png|jpg)$/,
+        loader: 'url-loader?limit=10000'
       }
     ]
   },

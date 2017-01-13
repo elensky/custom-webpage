@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  margin-bottom: $footer-height;
+  margin-bottom: $footer-height + 80px;
   a {
     color: $text-color;
     &:hover, &:focus {
