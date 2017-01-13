@@ -134,6 +134,7 @@ body {
 .main-menu {
   @extend .menu;
   font-size: $main-menu-font-size;
+  margin-bottom: 40px;
 }
 
 .stickers-list {
