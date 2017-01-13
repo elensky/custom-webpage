@@ -5,6 +5,8 @@ import {MainComponent} from './main';
 import {HeaderComponent} from './header';
 import {FooterComponent} from './footer';
 import {PageComponent} from './page';
+import {ContactComponent} from './contact';
+import {AboutComponent} from './about';
 
 export const STATES: Ng2StateDeclaration[] = [
   {
@@ -26,6 +28,16 @@ export const STATES: Ng2StateDeclaration[] = [
         component: FooterComponent
       }
     }
+  },
+  {
+    name: 'page.about',
+    url: '/about',
+    component: AboutComponent
+  },
+  {
+    name: 'page.contact',
+    url: '/contact',
+    component: ContactComponent
   }
 ];
 
