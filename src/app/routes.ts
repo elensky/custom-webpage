@@ -7,6 +7,7 @@ import {FooterComponent} from './footer';
 import {PageComponent} from './page';
 import {ContactComponent} from './contact';
 import {AboutComponent} from './about';
+import {ShopComponent} from './shop';
 
 export const STATES: Ng2StateDeclaration[] = [
   {
@@ -28,6 +29,11 @@ export const STATES: Ng2StateDeclaration[] = [
         component: FooterComponent
       }
     }
+  },
+  {
+    name: 'page.shop',
+    url: '/shop',
+    component: ShopComponent
   },
   {
     name: 'page.about',
