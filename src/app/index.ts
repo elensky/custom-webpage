@@ -15,6 +15,7 @@ import {VideoModalComponent} from './video_modal';
 import {ContactComponent} from './contact';
 import {AboutComponent} from './about';
 import {ShopComponent} from './shop';
+import {InstagramComponent} from './instagram';
 
 @NgModule({
   imports: [
@@ -34,7 +35,8 @@ import {ShopComponent} from './shop';
     VideoModalComponent,
     ContactComponent,
     AboutComponent,
-    ShopComponent
+    ShopComponent,
+    InstagramComponent
   ],
   bootstrap: [UIView]
 })

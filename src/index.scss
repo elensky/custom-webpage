@@ -274,3 +274,33 @@ body {
   font-size: $main-text-font-size;
   line-height: 1.6;
 }
+
+.custom-instagram {
+  font-size:0;
+  .inst-photo-block {
+    width: 228px;
+    height: 228px;
+    display: inline-block;
+    .inst-photo {
+      width: 223px;
+      height: 223px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .inst-logo {
+    width: 54px;
+    height: 54px;
+    background: url(images/1705.jpg);
+    position: relative;
+    margin: auto auto 40px auto;
+  }
+  .inst-crown {
+    width: 24px;
+    height: 19px;
+    background: url(images/3159.png);
+    position: relative;
+    margin: auto auto 5px auto;
+  }
+}
+
