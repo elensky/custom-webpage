@@ -3,6 +3,7 @@ import {UIRouter, Ng2StateDeclaration} from 'ui-router-ng2';
 
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
+import {FooterComponent} from './footer';
 import {PageComponent} from './page';
 
 export const STATES: Ng2StateDeclaration[] = [
@@ -20,6 +21,9 @@ export const STATES: Ng2StateDeclaration[] = [
       },
       'header@page': {
         component: HeaderComponent
+      },
+      'footer@page': {
+        component: FooterComponent
       }
     }
   }

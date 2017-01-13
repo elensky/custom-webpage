@@ -5,6 +5,7 @@ import {STATES, MyUIRouterConfig} from './routes';
 
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
+import {FooterComponent} from './footer';
 import {PageComponent} from './page';
 
 @NgModule({
@@ -15,7 +16,8 @@ import {PageComponent} from './page';
   declarations: [
     PageComponent,
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   bootstrap: [UIView]
 })
