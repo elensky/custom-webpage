@@ -9,7 +9,7 @@
         <button type="button" class="close" (click)="customModal.hide()"></button>
       </div>
       <div class="modal-body">
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-16by9" *ngIf="customModal.isShown">
           <iframe src="https://www.youtube.com/v/fV-AAu7yQgg&t=26s" class="embed-responsive-item" allowfullscreen></iframe>
         </div>
       </div>
