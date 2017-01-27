@@ -1,44 +1,74 @@
 [
-  {
-    "id": "1",
-    "name": "First Sticker",
+  { 
+    "id": "1.01.c",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "01_2_c.png"
   },
   {
-    "id": "2",
-    "name": "kdsjhkjsdjdksh",
+    "id": "1.04.c",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "01_04_c.png"
   },
   {
-    "id": "3",
-    "name": "dsfdsfdsfds",
+    "id": "1.05.b",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "1_05_b.png"
   },
   {
-    "id": "4",
-    "name": "dsfdsfdsfds",
+    "id": "3.04.b",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "3_04_b.png"
   },
   {
-    "id": "5",
-    "name": "fdsf df dsfdsr",
+    "id": "3.05.b",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "3_05_b.png"
   },
   {
-    "id": "6",
-    "name": "fdsfd hfjkh 232323",
-    "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "id": "1.03.c",
+    "name": "Sticker",
+    "size": "29 x 7",
+    "image": "1_03_c.png"
   },
   {
-    "id": "7",
-    "name": "dkjj 3432",
+    "id": "1.05.c",
+    "name": "Sticker",
     "size": "4,5 x 4,7",
-    "image": "4647.png"
+    "image": "1_05_c.png"
+  },
+  {
+    "id": "1.02.b",
+    "name": "Sticker",
+    "size": "4,5 x 4,7",
+    "image": "1_02_b.png"
+  },
+  {
+    "id": "2.02.c",
+    "name": "Sticker",
+    "size": "4,5 x 4,7",
+    "image": "2_02_c.png"
+  },
+  {
+    "id": "2.03.c",
+    "name": "Sticker",
+    "size": "4,5 x 4,7",
+    "image": "2_03_c.png"
+  },
+  {
+    "id": "2.04.c",
+    "name": "Sticker",
+    "size": "4,5 x 4,7",
+    "image": "2_04_c.png"
+  },
+  {
+    "id": "2.05.c",
+    "name": "Sticker",
+    "size": "4,5 x 4,7",
+    "image": "2_05_c.png"
   }
 ]
