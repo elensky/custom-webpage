@@ -1,0 +1,60 @@
+<div class="modal fade buy-modal" bsModal #buyModal="bs-modal" [config]="{backdrop: 'static'}"
+     tabindex="-1" role="dialog" aria-labelledby="buyModalLabel">
+  <div class="modal-dialog modal-lg" aria-hidden="true">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="buyModal.hide()"></button>
+      </div>
+      <div class="modal-body">
+        <div class="online-block" #stickerBlock *ngIf="isSticker">
+          <div class="sticker-left buy-block">
+            <div class="sticker-big-image" [ngStyle]="{'background-image': 'url(./stickers_img/' + (sticker ? sticker.image : '') + ')'}"></div>
+          </div><div class="sticker-right buy-block">
+          <div class="sticker-descr">{{sticker ? sticker.name : ''}} # {{sticker? sticker.id : ''}}<br>{{sticker ? sticker.size : ''}} cm
+            <br>{{'pack of 15 screen printed on die cut shape clear stickers. 4 colours + white'}}
+          </div>
+          <div class="switch-links">
+            <div class="switch-link not-active" (click)="showOnline()">buy online</div><div (click)="showOffline()" class="switch-link not-active">buy offline</div>
+          </div>
+        </div>
+        </div>
+        <div class="online-block" #onlineBlock *ngIf="isOnline">
+          <div class="online-left buy-block">
+            <div class="oz-img online-img"></div>
+            <div class="ali-img online-img"></div>
+            <div class="twenty-one-img online-img"></div>
+            <div class="mishka-img online-img"></div>
+            <div class="converse-img online-img"></div>
+          </div><div class="online-right buy-block">
+            <h1 class="text-center">Partners online shops</h1>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="switch-links">
+            <div class="switch-link">buy online</div><div (click)="showOffline()" class="switch-link not-active">buy offline</div>
+          </div>
+          </div>
+        </div>
+        <div class="offline-block" #offlineBlock *ngIf="isOffline">
+          <div class="offline-left buy-block">
+            <div class="" *ngIf="isOffline">
+              <iframe src="https://www.google.com/maps/d/embed?mid=1tPqS9uOrMHhBcm3mGMFW3tnEpko&hl=ru" width="100%" height="900" style="border:none;"></iframe>
+            </div>
+          </div>
+          <div class="offline-right buy-block">
+            <h1 class="text-warning">Gomel&nbsp;<span class="glyphicon glyphicon-menu-down"></span></h1>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="switch-links">
+              <div (click)="showOnline()" class="switch-link not-active">buy online</div><div class="switch-link">buy offline</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

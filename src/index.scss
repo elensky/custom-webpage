@@ -72,6 +72,9 @@ body {
       height: 1.2em;
     }
   }
+  a {
+    cursor: pointer;
+  }
 }
 
 .brand-line {
@@ -148,6 +151,9 @@ body {
   position: relative;
   display: inline-block;
   font-size: $font-size-base;
+  .sticker-image-area {
+    cursor: pointer;
+  }
   .sticker-image {
     background-position: center;
     background-repeat: no-repeat;
@@ -306,3 +312,125 @@ body {
   }
 }
 
+.buy-modal {
+  .modal-content {
+    height: 100%;
+  }
+  .modal-dialog {
+    width: 1200px;
+    height: 900px;
+    margin-top: 0;
+    .modal-header {
+      position: absolute;
+      right: 45px;
+      top: 10px;
+      z-index: 999;
+    }
+    .modal-body {
+      padding: 0;
+      height: 100%;
+    }
+    .offline-right h1 {
+      padding-left: 95px;
+      .glyphicon {
+        font-size: 28px;
+      }
+    }
+    .buy-block {
+      display: inline-block;
+      width: 50%;
+      height: 100%;
+      color: #fff;
+      line-height: 1.2;
+      position: absolute;
+      h1 {
+        margin-top: 100px;
+      }
+      .buy-descr {
+        padding: 20px 95px;
+        font-size: 30px;
+        border-left: 1px solid #222;
+        &:hover {
+          background: #222;
+          border-left: 1px solid #2f2f2f;
+        }
+      }
+      &.online-left, &.sticker-left, &.offline-left {
+        background: #222;
+      }
+      &.online-left {
+        padding: 50px;
+        .online-img {
+          height: 160px;
+          width: 100%;
+          &.oz-img {
+            background: url(images/3971@2x.png) no-repeat center left/contain;
+          }
+          &.ali-img {
+            background: url(images/3972@2x.png) no-repeat center right/contain;
+            height: 100px;
+            margin: 30px 0;
+          }
+          &.twenty-one-img {
+            background: url(images/3973@2x.png) no-repeat center left/contain;
+          }
+          &.mishka-img {
+            background: url(images/3974@2x.jpg) no-repeat center right/contain;
+            height: 90px;
+            margin: 30px 0;
+          }
+          &.converse-img {
+            background: url(images/3975.png) no-repeat center left/contain;
+            height: 120px;
+            margin-top: 50px;
+          }
+        }
+      }
+      &.online-right, &.offline-right, &.sticker-right {
+        background: #2f2f2f;
+        right: 0;
+      }
+      .sticker-descr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 33px;
+        padding: 100px;
+      }
+      .sticker-big-image {
+        position: relative;
+        margin: auto;
+        max-width: 400px;
+        height: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .switch-links {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      .switch-link {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        padding: 12px;
+        color: $warning-color;
+        &:first-child {
+          border-right: 1px solid #2f2f2f;
+        }
+        &.not-active {
+          cursor: pointer;
+          background: $warning-color;
+          color: #000;
+          &:hover {
+            background: #fff;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}

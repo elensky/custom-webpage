@@ -1,4 +1,5 @@
 <footer class="footer">
+  <buy #buyComponent></buy>
   <div class="container">
     <div class="copyright">
       <span class="text-warning">&copy; 2016 Custom.Stickers.</span> Design by Gagarin <span
@@ -9,8 +10,8 @@
         <div class="col-md-4">
           <div class="text-muted menu-name">buy</div>
           <ul class="separator-menu">
-            <li><a href="#">online</a></li>
-            <li><a href="#">offline</a></li>
+            <li><a (click)="buyComponent.showOnline()">online</a></li>
+            <li><a (click)="buyComponent.showOffline()">offline</a></li>
           </ul>
         </div>
         <div class="col-md-4">
