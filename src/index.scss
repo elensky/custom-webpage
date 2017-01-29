@@ -11,6 +11,8 @@ $muted-color: #7f7f7f;
 
 $body-bg: #000;
 
+$custom-brand-gray: #2f2f2f;
+
 $font-weight-base: 500;
 $font-size-base: 17px;
 $text-color: #fff;
@@ -88,9 +90,25 @@ body {
   font-weight: $big-text-font-weight;
 }
 
-
+.custom-general-info {
+  padding-top: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  .custom-logo {
+    position: absolute;
+    background: url("./images/custom_logo.svg") no-repeat center;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}
 
 .video-link {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 10;
   &:hover, &:focus {
     color: $danger-color;
   }
@@ -141,34 +159,60 @@ body {
 }
 
 .stickers-list {
-  font-size: 0;
+
 }
 
+$sticker-block-width: 285px;
+$sticker-block-height: 348px;
+
 .sticker-block {
-  width: 285px;
+  width: $sticker-block-width;
   color: $muted-color;
-  height: 370px;
+  height: $sticker-block-height;
   position: relative;
-  display: inline-block;
   font-size: $font-size-base;
-  .sticker-image-area {
-    cursor: pointer;
+
+  @for $i from 1 through 4 {
+    &.h-size-#{$i} {
+      width: $sticker-block-width * $i;
+    }
+    &.v-size-#{$i} {
+      height: $sticker-block-height * $i;
+    }
   }
+
+  $hover-size: 22px;
+  $sticker-image-margin: 20px;
+  $sticker-image-bottom: 80px;
+  $sticker-image-zoom-delta: 5px;
+
+  .hover-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
   .sticker-image {
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: all ease 0.25s;
-    height: 228px;
+    background: no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: $sticker-image-margin;
+    bottom: $sticker-image-bottom;
+    left: $sticker-image-margin;
+    right: $sticker-image-margin;
     z-index: 10;
-    margin-top: 20px;
   }
+
   .sticker-text {
     padding-left: 20px;
     line-height: 1;
     position: absolute;
-    bottom: 80px;
+    bottom: 30px;
     font-size: 0.9em;
   }
+
   .buy-block {
     display: none;
     width: 100%;
@@ -178,7 +222,6 @@ body {
     font-size: 18px;
     position: absolute;
     bottom: 0;
-    z-index: 100;
     .buy-link {
       width: 50%;
       display: table-cell;
@@ -186,20 +229,35 @@ body {
       color: #000;
       cursor: pointer;
       &:first-child {
-        border-right: 1px solid #2f2f2f;
+        border-right: 1px solid $custom-brand-gray;
       }
     }
   }
+
   &:hover {
-    color: #fff;
-    background-color: #2f2f2f;
-    & .buy-block {
-      display: table;
+    .hover-block {
+      background-color: $custom-brand-gray;
+      top: -1 * $hover-size;
+      bottom: -2 * $hover-size;
+      right: -1 * $hover-size;
+      left: -1 * $hover-size;
+      z-index: 100;
+      .buy-block {
+        display: table;
+      }
+      .sticker-image {
+        top: $sticker-image-margin + $hover-size - $sticker-image-zoom-delta;
+        right: $sticker-image-margin + $hover-size - $sticker-image-zoom-delta;
+        left: $sticker-image-margin + $hover-size - $sticker-image-zoom-delta;
+        bottom: $sticker-image-bottom + (2 * $hover-size) - $sticker-image-zoom-delta;
+      }
     }
-    & .sticker-image {
-      background-size: contain;
+    .sticker-text {
+      z-index: 101;
+      color: #fff;
     }
   }
+
 }
 .custom-top-menu {
   height: 220px;

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'videol',
+  selector: 'video-modal',
   template: require('./video_modal.html')
 })
 export class VideoModalComponent {

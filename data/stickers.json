@@ -1,5 +1,5 @@
 [
-  { 
+  {
     "id": "1.01.c",
     "name": "Sticker",
     "size": "4,5 x 4,7",
@@ -24,6 +24,15 @@
     "image": "3_04_b.png"
   },
   {
+    "id": "sddsdsd",
+    "name": "Line",
+    "size": "sdsdsdsds",
+    "image": "custom_line_01.png",
+    "config": {
+      "hSize": 2
+    }
+  },
+  {
     "id": "3.05.b",
     "name": "Sticker",
     "size": "4,5 x 4,7",
@@ -40,6 +49,16 @@
     "name": "Sticker",
     "size": "4,5 x 4,7",
     "image": "1_05_c.png"
+  },
+  {
+    "id": "sddsdsd",
+    "name": "Page",
+    "size": "sdsdsdsds",
+    "image": "custom_page_01_big.png",
+    "config": {
+      "hSize": 2,
+      "vSize": 2
+    }
   },
   {
     "id": "1.02.b",
