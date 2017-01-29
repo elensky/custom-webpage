@@ -418,6 +418,7 @@ body {
         text-align: center;
         padding: 12px;
         color: $warning-color;
+        z-index: 999;
         &:first-child {
           border-right: 1px solid #2f2f2f;
         }

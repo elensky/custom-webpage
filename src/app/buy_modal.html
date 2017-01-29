@@ -7,7 +7,7 @@
         <button type="button" class="close" (click)="buyModal.hide()"></button>
       </div>
       <div class="modal-body">
-        <div class="online-block" #stickerBlock *ngIf="isSticker">
+        <div class="online-block" #stickerBlock *ngIf="modalMode.sticker == mode">
           <div class="sticker-left buy-block">
             <div class="sticker-big-image" [ngStyle]="{'background-image': 'url(./stickers_img/' + (sticker ? sticker.image : '') + ')'}"></div>
           </div><div class="sticker-right buy-block">
@@ -15,11 +15,11 @@
             <br>{{'pack of 15 screen printed on die cut shape clear stickers. 4 colours + white'}}
           </div>
           <div class="switch-links">
-            <div class="switch-link not-active" (click)="showOnline()">buy online</div><div (click)="showOffline()" class="switch-link not-active">buy offline</div>
+            <div class="switch-link not-active" (click)="showModal(modalMode.online)">buy online</div><div (click)="showModal(modalMode.offline)" class="switch-link not-active">buy offline</div>
           </div>
         </div>
         </div>
-        <div class="online-block" #onlineBlock *ngIf="isOnline">
+        <div class="online-block" #onlineBlock *ngIf="modalMode.online == mode">
           <div class="online-left buy-block">
             <div class="oz-img online-img"></div>
             <div class="ali-img online-img"></div>
@@ -33,13 +33,13 @@
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="switch-links">
-            <div class="switch-link">buy online</div><div (click)="showOffline()" class="switch-link not-active">buy offline</div>
+            <div class="switch-link">buy online</div><div (click)="showModal(modalMode.offline)" class="switch-link not-active">buy offline</div>
           </div>
           </div>
         </div>
-        <div class="offline-block" #offlineBlock *ngIf="isOffline">
+        <div class="offline-block" #offlineBlock *ngIf="modalMode.offline == mode">
           <div class="offline-left buy-block">
-            <div class="" *ngIf="isOffline">
+            <div class="" *ngIf="modalMode.offline == mode">
               <iframe src="https://www.google.com/maps/d/embed?mid=1tPqS9uOrMHhBcm3mGMFW3tnEpko&hl=ru" width="100%" height="900" style="border:none;"></iframe>
             </div>
           </div>
@@ -50,7 +50,7 @@
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="switch-links">
-              <div (click)="showOnline()" class="switch-link not-active">buy online</div><div class="switch-link">buy offline</div>
+              <div (click)="showModal(modalMode.online)" class="switch-link not-active">buy online</div><div class="switch-link">buy offline</div>
             </div>
           </div>
         </div>
