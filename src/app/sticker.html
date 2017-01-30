@@ -1,9 +1,9 @@
-<div class="sticker-block" [ngClass]="getStickerBlockSizeClass()" (click)="buyComponent.showModal(buyComponent.modalMode.sticker)">
+<div class="sticker-block" [ngClass]="getStickerBlockSizeClass()" >
   <buy #buyComponent [sticker]="sticker"></buy>
-  <div class="hover-block">
+  <div class="hover-block" (click)="buyComponent.showModal(buyComponent.modalMode.sticker)">
     <div class="sticker-image" [ngStyle]="{'background-image': 'url(./stickers_img/' + sticker.image + ')'}"></div>
     <div class="buy-block text-center">
-      <div class="buy-link" (click)="buyComponent.showModal(buyComponent.modalMode.online)">buy online</div><div class="buy-link" (click)="buyComponent.showModal(buyComponent.modalMode.offline)">buy offline</div>
+      <div class="buy-link" (click)="buyComponent.showModal(buyComponent.modalMode.online); $event.stopPropagation()">buy online</div><div class="buy-link" (click)="buyComponent.showModal(buyComponent.modalMode.offline); $event.stopPropagation()">buy offline</div>
     </div>
   </div>
   <div class="sticker-text">{{sticker.name}} # {{sticker.id}}<br>{{sticker.size}} cm</div>
