@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Generator: Xara Designer (www.xara.com), SVG filter version: 6.0.0.4-->
+<svg stroke-width="0.501" stroke-linejoin="bevel" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" overflow="visible" width="40.5pt" height="60pt" viewBox="0 0 40.5 60">
+ <defs>
+  <image id="Bitmap" preserveAspectRatio="none" width="0.001" height="0.001" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/4QA4RXhpZgAASUkqAAgAAAABADEBAgAWAAAAGgAAAAAAAABYYXJhIERlc2lnbmVyIFBybyBYMTEA/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/8AACwgAWAA+AQERAP/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/aAAgBAQAAPwDv/iF8Qv8AhDMfLnOP4c9a4D/hoP8A2P8AyH/9aj/hoP8A2P8AyH/9aj/hoP8A2P8AyH/9aj/hoP8A2P8AyH/9aj/hoP8A2P8AyH/9aj/hoP8A2P8AyH/9avX/AAj4h/4STSBe4xnHbFeQftB/wf8AAP6V8/0UUUUV9f8Awi/5FFf+A/yrgP2g/wCD/gH9K+f6KKKKK+v/AIRf8iiv/Af5VwH7Qf8AB/wD+lfP9FFFFFfX/wAIv+RRX/gP8q4D9oP+D/gH9K+f6KKKKK+v/hF/yKK/8B/lXAftB/wf8A/pXz/RRRRRX1/8Iv8AkUV/4D/KuA/aD/g/4B/Svn+iiiiivr/4Rf8AIor/AMB/lXAftB/wf8A/pXz/AEUUUUV9f/CL/kUV/wCA/wAq4D9oP+D/AIB/Svn+iiiiivr/AOEX/Ior/wAB/lXAftB/wf8AAP6V8/0UUUUV9f8Awi/5FFf+A/yo+IXw9/4TPHzYxj+LHSuA/wCGfP8Ab/8AIn/16P8Ahnz/AG//ACJ/9ej/AIZ8/wBv/wAif/Xo/wCGfP8Ab/8AIn/16P8Ahnz/AG//ACJ/9ej/AIZ8/wBv/wAif/Xr1/wj4e/4RvSBZZzjHfNf/9k=">
+   <title>Bitmap7</title>
+  </image>
+  <filter id="bmpTrans191-255" xmlns="http://www.w3.org/2000/svg">
+   <feComponentTransfer>
+    <feFuncR type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+    <feFuncG type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+    <feFuncB type="gamma" amplitude="1.055" exponent=".416666666" offset="-0.055"/>
+   </feComponentTransfer>
+   <feComponentTransfer>
+    <feFuncR type="linear" slope="-0.25" intercept="0.25"/>
+    <feFuncG type="linear" slope="-0.25" intercept="0.25"/>
+    <feFuncB type="linear" slope="-0.25" intercept="0.25"/>
+    <feFuncA type="linear" slope="1" intercept="0"/>
+   </feComponentTransfer>
+   <feComponentTransfer>
+    <feFuncR type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+    <feFuncG type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+    <feFuncB type="gamma" amplitude="1" exponent="2.4" offset="0"/>
+   </feComponentTransfer>
+  </filter>
+  <pattern id="BitmapFill" patternUnits="userSpaceOnUse" width="1000" height="1000" patternTransform="translate(0.75 59.25) scale(1 -1)">
+   <use xlink:href="#Bitmap" transform="scale(46500 66000)" filter="url(#bmpTrans191-255)"/>
+  </pattern>
+  <image id="Bitmap_1" preserveAspectRatio="none" width="0.001" height="0.001" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEgElEQVRoge2aSWgUQRSG3yQxGhfcFcEVNbgguKNE8aKCCnrRCEYkLkE9C+rBgzkoLujNkyKIelAEFzSgiIgiopiDcQcxCQjuMe4mmrT/T7U6DlWdru6K9Az54aNnumaq6nVVv3r1ulOSJs/zxuJQChaBKSBPkq1WUA0ugJOpVOrRP6UwqABUgBde9uod2Aw6pxu2Bnzxsl9NYCttSuHDGBwvgSGSG2oAs3gPLQeDJXfUB5TSMDqKlOSWFnEqtkjyvF8zOA7uAs/wm6lgGeiiKWstkGS69BNgA9x3s+kHGJBOOHwF6zXFeUldp6qCjKJQ/gOHh6BFV55Uw5rjVpD0yCKyOgzLNnUY9p9VELeCpBo2F+tUoHEoz8dhBMjXlce+Mm2I+6W3oB40+t97gaGgv5jbLwPf0PkbOP7UlPN/00GFqWGGVJ64VxO4CQ6Ba+C1/O0gr3BfUR1bDeaDIkM9rQFtBM+2dtgT1YEVXvqGz9x2IVgIHrruhGvDasBEsRT+Mwpcd9kRl4bVg0kSUfjvSPDAVWdcGdYMyiWmPDUtP7voUJDzeAXepH2nJ6J71d07V4Wbu1Tqq8SQp7Yix0RlyjJFR/IMfE87Ryc0yFSZSdtAjzSKwWvN71rAKnEkT43aD007HMnZGX1iVuqnrvNBLrMJI/DpN/heLOoKZeo9uCXudAfUas53Bf0y+vTdVIlN5MEFVZcbYVaoVtyJ9b3RnGfbM8NW4iKkqpPghdRKGAku5J8NxT3C1tMR3QdohDi8QJ4Kfrsbir+ErcemQ3QSuqWhtyjjXIkJzwGa82z7dthKbAyjt2rQnKdhM8SdmC8crjnP0XoathLbEas11FGOKdRVYspfoBnB6LYzL0Fd2LpCGwZvxSt2zlBcIvpowVbcwiw0lF1BHxrCVmR7058RNXKZ4pWu9GIGwTjsAd00xQzVjtvUZ2vYY3DWUMZd8REv4raF/wXjDD9hLGoV3VgZ5i+e+0QFyDpNAGe88BvNzoBPezjFSww/+wh2oe2mtupLl/X6gwbu47BT9LkIahg4DC6i02VgiG9Avg93zYPAElEPH06BsYa6GNEcADds+xk1mXMQTAaM6nXxI0drDpgtf5M5H0R1tKe0ncz5rSqwGxfTOmSLZBgaYgZpk6iM02IxPzjkjBgg+gW3LTEJtBFtfYjw3+ihEBp8h8NacFTM0zKKODrnQRnaeB61klgxnm/cBrBFzA7FRhydHWBlHKOo2MErpyXYj4/zRI1eY4RquPjzfuICXRl1+qXLWSYYnbmH+44J0PGi3kRYALjoMlLPvICcblx06VQug5Og2talB8lpihsd42PTGgIjuSTQ+40GA0WlFWggvSSn8BNQ72/xnavdcvd+bPnI578r6B4rlCxWkGEzMZ2KJKHytziMLbWPkYJeYOHadFpUONMeT2TiahpYKoYXWGgYo+bpklu6zZHi+pHEEYmjqlx9ra8kD26Zm8ftohbMbBff6Nnr2/Tn1dl1Xg69Opv5sjOnJcMhJlSYBsuGl52ZFqSfOPFnpETkF3aqorRMd6F+AAAAAElFTkSuQmCC">
+   <title>1</title>
+  </image>
+ </defs>
+ <g id="Document" fill="none" stroke="black" font-family="Times New Roman" font-size="16" transform="scale(1 -1)">
+  <g id="Spread" transform="translate(0 -60)">
+   <g id="Page background">
+    <g id="Group" stroke="none">
+     <mask id="TranspMask">
+      <rect x="-10%" y="-10%" width="120%" height="120%" fill="url(#BitmapFill)" stroke="none"/>
+     </mask>
+     <path d="M 0.75,59.25 L 47.25,59.25 L 47.25,-6.75 L 0.75,-6.75 L 0.75,59.25 Z" fill="#000000" marker-start="none" marker-end="none" mask="url(#TranspMask)"/>
+     <path d="M 0,59.999 L 0,0 L 40.499,0 L 40.499,59.999 L 0,59.999 Z" stroke-linejoin="bevel" stroke-width="0" fill="#000000" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"/>
+    </g>
+   </g>
+   <g id="MouseOff">
+    <g id="Group_1" stroke-linejoin="miter" stroke-linecap="round" stroke="none">
+     <clipPath id="clip-path">
+      <use xlink:href="#Shape"/>
+     </clipPath>
+     <g clip-path="url(#clip-path)">
+      <use xlink:href="#Bitmap_1" transform="translate(0 40.584) scale(40194 -40194)"/>
+     </g>
+     <path d="M 0,40.584 L 40.194,40.584 L 40.194,0.39 L 0,0.39 L 0,40.584 Z" stroke-width="0.123" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775" fill="none" id="Shape"/>
+     <path d="M 11.366,45.992 L 11.366,45.993 L 11.366,60 L 15.982,53.398 L 20.097,59.999 L 20.097,60 L 24.21,53.4 L 28.828,59.999 L 28.828,45.992 L 11.366,45.992 Z" fill="#ffffff" stroke-width="0.224" marker-start="none" marker-end="none" stroke-miterlimit="79.8403193612775"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
