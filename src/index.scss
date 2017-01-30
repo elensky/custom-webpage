@@ -187,6 +187,7 @@ $sticker-block-height: 348px;
   $sticker-image-zoom-delta: 5px;
 
   .hover-block {
+    cursor: pointer;
     position: absolute;
     top: 0;
     bottom: 0;
