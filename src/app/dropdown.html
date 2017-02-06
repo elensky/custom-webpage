@@ -1,0 +1,21 @@
+<div class="btn-group" dropdown>
+  <button id="single-button" type="button" class="btn btn-default" dropdownToggle>
+    {{city}}&nbsp;<span class="glyphicon glyphicon-menu-down"></span>
+  </button>
+  <ul dropdownMenu role="menu" aria-labelledby="single-button">
+    <li *ngIf="city != 'Minsk'" role="menuitem"><a class="dropdown-item" href="#" (click)="setCity('Minsk')">Minsk</a></li>
+    <li *ngIf="city != 'Gomel'" role="menuitem"><a class="dropdown-item" href="#" (click)="setCity('Gomel')">Gomel</a></li>
+  </ul>
+</div>
+
+<div class="city-shops">
+  <div *ngFor="let cityAddress of allAddresses">
+    <div *ngIf="city == cityAddress.name">
+      <div *ngFor="let address of cityAddress.addresses">
+        <div class="buy-descr">{{address ? address.name : ''}}<br>
+          {{address ? address.description : ''}}<br>
+          {{address ? address.address : ''}}</div>
+      </div>
+    </div>
+  </div>
+</div>

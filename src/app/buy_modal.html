@@ -26,15 +26,17 @@
             <div class="twenty-one-img online-img"></div>
             <div class="mishka-img online-img"></div>
             <div class="converse-img online-img"></div>
-          </div><div class="online-right buy-block">
+          </div>
+          <div class="online-right buy-block">
+            <div class="padding-v-100"></div>
             <h1 class="text-center">Partners online shops</h1>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
             <div class="switch-links">
-            <div class="switch-link">buy online</div><div (click)="showModal(modalMode.offline)" class="switch-link not-active">buy offline</div>
-          </div>
+              <div class="switch-link">buy online</div><div (click)="showModal(modalMode.offline)" class="switch-link not-active">buy offline</div>
+            </div>
           </div>
         </div>
         <div class="offline-block" #offlineBlock *ngIf="modalMode.offline == mode">
@@ -44,11 +46,8 @@
             </div>
           </div>
           <div class="offline-right buy-block">
-            <h1 class="text-warning">Gomel&nbsp;<span class="glyphicon glyphicon-menu-down"></span></h1>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="padding-v-100"></div>
+            <dropdown #customDropdown class="shop-list" [address]="address"></dropdown>
             <div class="switch-links">
               <div (click)="showModal(modalMode.online)" class="switch-link not-active">buy online</div><div class="switch-link">buy offline</div>
             </div>

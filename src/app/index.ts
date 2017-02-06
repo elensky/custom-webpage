@@ -5,6 +5,7 @@ import {STATES, MyUIRouterConfig} from './routes';
 import {HttpModule} from '@angular/http';
 import {ModalModule} from 'ng2-bootstrap/modal';
 import {MasonryModule} from 'angular2-masonry';
+import {DropdownModule} from 'ng2-bootstrap/dropdown';
 
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
@@ -18,6 +19,7 @@ import {AboutComponent} from './about';
 import {ShopComponent} from './shop';
 import {InstagramComponent} from './instagram';
 import {BuyModalComponent} from './buy_modal';
+import {DropdownComponent} from './dropdown';
 
 @NgModule({
   imports: [
@@ -25,7 +27,8 @@ import {BuyModalComponent} from './buy_modal';
     HttpModule,
     ModalModule.forRoot(),
     UIRouterModule.forRoot({states: STATES, configClass: MyUIRouterConfig}),
-    MasonryModule
+    MasonryModule,
+    DropdownModule.forRoot()
   ],
   declarations: [
     PageComponent,
@@ -40,7 +43,8 @@ import {BuyModalComponent} from './buy_modal';
     AboutComponent,
     ShopComponent,
     InstagramComponent,
-    BuyModalComponent
+    BuyModalComponent,
+    DropdownComponent
   ],
   bootstrap: [UIView]
 })

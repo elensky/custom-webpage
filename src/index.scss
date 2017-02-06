@@ -389,8 +389,7 @@ $sticker-block-height: 348px;
       padding: 0;
       height: 100%;
     }
-    .offline-right h1 {
-      padding-left: 95px;
+    .offline-right  {
       .glyphicon {
         font-size: 28px;
       }
@@ -402,12 +401,9 @@ $sticker-block-height: 348px;
       color: #fff;
       line-height: 1.2;
       position: absolute;
-      h1 {
-        margin-top: 100px;
-      }
       .buy-descr {
         padding: 20px 95px;
-        font-size: 30px;
+        font-size: 25px;
         border-left: 1px solid #222;
         &:hover {
           background: #222;
@@ -493,4 +489,42 @@ $sticker-block-height: 348px;
       }
     }
   }
+}
+.shop-list {
+  margin-left: 80px;
+  .btn-default {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: $warning-color;
+    font-size: 44px;
+    font-weight: 500;
+  }
+  .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+    background: transparent;
+    color: $warning-color;
+    border: none;
+    box-shadow: none;
+  }
+  ul {
+    background-color: #2f2f2f;
+    border: none;
+    li {
+      a {
+        color: $warning-color;
+        font-size: 44px;
+        &:hover, &:focus, &:active {
+          color: $warning-color;
+          background-color: #222;
+        }
+      }
+    }
+  }
+  .city-shops {
+    max-height: 650px;
+    overflow: scroll;
+  }
+}
+.padding-v-100 {
+  padding-top: 100px;
 }
