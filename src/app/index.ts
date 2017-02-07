@@ -22,6 +22,7 @@ import {InstagramComponent} from './instagram';
 import {BuyModalComponent} from './buy_modal';
 import {DropdownComponent} from './dropdown';
 import {BusinessComponent} from './business';
+import {TagsPipe} from './tags_pipe';
 
 @NgModule({
   imports: [
@@ -48,7 +49,8 @@ import {BusinessComponent} from './business';
     InstagramComponent,
     BuyModalComponent,
     DropdownComponent,
-    BusinessComponent
+    BusinessComponent,
+    TagsPipe
   ],
   bootstrap: [UIView]
 })

@@ -27,13 +27,15 @@ export class Sticker {
   image: string;
   size: string;
   config: Config;
+  tags: [string];
 
-  constructor(id: string, name: string, image: string, size: string, config: Config) {
+  constructor(id: string, name: string, image: string, size: string, config: Config, tags: [string]) {
     this.id = id;
     this.name = name;
     this.image = image;
     this.size = size;
     this.config = config;
+    this.tags = tags;
   }
 }
 

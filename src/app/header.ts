@@ -10,6 +10,6 @@ export class HeaderComponent {
   constructor(private uiRouter: UIRouter) {}
 
   isShownMainLogo() {
-    return this.uiRouter.globals.current.name != 'page.main';
+    return this.uiRouter.globals.current.name !== 'page.main';
   }
 }

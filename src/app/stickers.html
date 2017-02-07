@@ -1,12 +1,12 @@
 <ul class="main-menu">
-  <li><a href="#" class="active">all stuff</a></li>
-  <!--<li><a href="#">sticker pack</a></li>-->
-  <!--<li><a href="#">stickerpage</a></li>-->
-  <!--<li><a href="#">stickers</a></li>-->
+  <li><a (click)="setFilterTags([])" [ngClass]="{active: filterTags.length === 0}">all stuff</a></li>
+  <li><a (click)="setFilterTags(['line'])" [ngClass]="{active: filterTags[0] === 'line'}">sticker line</a></li>
+  <li><a (click)="setFilterTags(['page'])" [ngClass]="{active: filterTags[0] === 'page'}">stickerpage</a></li>
+  <li><a (click)="setFilterTags(['sticker'])" [ngClass]="{active: filterTags[0] === 'sticker'}">stickers</a></li>
 </ul>
 
-<masonry>
-  <masonry-brick *ngFor="let sticker of stickers">
+<masonry [options]="{ columnWidth: 285 }">
+  <masonry-brick *ngFor="let sticker of (stickers | tagsFilter: filterTags)">
     <sticker [sticker]="sticker"></sticker>
   </masonry-brick>
 </masonry>

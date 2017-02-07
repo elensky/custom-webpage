@@ -13,11 +13,11 @@ export class DropdownComponent {
   allAddresses: [CityAddresses];
 
   public setCity = (city) => {
-    if (this.city === city) return;
+    if (this.city === city) { return; }
     this.city = city;
   };
 
-  constructor (http:Http) {
+  constructor (http: Http) {
     this.city = 'Minsk';
 
     http.get('offline_shops.json')

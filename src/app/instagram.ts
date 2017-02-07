@@ -7,9 +7,11 @@ import 'rxjs/add/operator/map';
   template: require('./instagram.html')
 })
 export class InstagramComponent {
+
   photos: any[] = [];
-  private params: URLSearchParams = new URLSearchParams();
   finished: boolean;
+
+  private params: URLSearchParams = new URLSearchParams();
 
   constructor (private _jsonp: Jsonp) {
     this.params.set('access_token', '4489516260.e6dce12.a724dda10bf147bc914ce971e4f9223f');
