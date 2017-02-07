@@ -30,10 +30,13 @@
           <div class="online-right buy-block">
             <div class="padding-v-100"></div>
             <h1 class="text-center">Partners online shops</h1>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
-            <div class="buy-descr">pack of 15 screen printed on die cut shape clear stickers. 4 colours + white</div>
+            <div class="shop-addresses">
+              <div *ngFor="let address of onlineAddresses">
+                <div class="buy-descr">{{address ? address.name : ''}}<br>
+                  {{address ? address.description : ''}}<br>
+                  {{address ? address.address : ''}}</div>
+              </div>
+            </div>
             <div class="switch-links">
               <div class="switch-link">buy online</div><div (click)="showModal(modalMode.offline)" class="switch-link not-active">buy offline</div>
             </div>
