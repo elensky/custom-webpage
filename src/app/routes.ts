@@ -8,6 +8,7 @@ import {PageComponent} from './page';
 import {ContactComponent} from './contact';
 import {AboutComponent} from './about';
 import {ShopComponent} from './shop';
+import {BusinessComponent} from './business';
 
 export const STATES: Ng2StateDeclaration[] = [
   {
@@ -44,6 +45,11 @@ export const STATES: Ng2StateDeclaration[] = [
     name: 'page.contact',
     url: '/contact',
     component: ContactComponent
+  },
+  {
+    name: 'page.business',
+    url: '/business',
+    component: BusinessComponent
   }
 ];
 

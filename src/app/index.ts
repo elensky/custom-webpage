@@ -20,6 +20,7 @@ import {ShopComponent} from './shop';
 import {InstagramComponent} from './instagram';
 import {BuyModalComponent} from './buy_modal';
 import {DropdownComponent} from './dropdown';
+import {BusinessComponent} from './business';
 
 @NgModule({
   imports: [
@@ -44,7 +45,8 @@ import {DropdownComponent} from './dropdown';
     ShopComponent,
     InstagramComponent,
     BuyModalComponent,
-    DropdownComponent
+    DropdownComponent,
+    BusinessComponent
   ],
   bootstrap: [UIView]
 })
