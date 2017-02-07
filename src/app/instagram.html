@@ -1,11 +1,11 @@
 <div class="custom-instagram">
-  <div>
-    <div class="inst-crown"></div>
-    <div class="inst-logo"></div>
-  </div>
+  <div class="inst-logo"></div>
   <div>
     <div class="inst-photo-block text-center" *ngFor='let photo of photos'>
-      <div class="inst-photo" [ngStyle]="{'background-image': 'url(images/'+ photo +'.png)'}"></div>
+      <div class="inst-photo" [ngStyle]="{'background-image': 'url(' + photo.images.low_resolution.url + ')'}"></div>
+    </div>
+    <div class="inst-photo-block text-center" *ngIf="!finished">
+      <div class="inst-photo more" (click)="getMore()">more</div>
     </div>
   </div>
 </div>

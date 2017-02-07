@@ -343,31 +343,36 @@ $sticker-block-height: 348px;
 }
 
 .custom-instagram {
+  margin-top: 50px;
   font-size:0;
   .inst-photo-block {
     width: 228px;
     height: 228px;
     display: inline-block;
+    vertical-align: top;
     .inst-photo {
       width: 223px;
       height: 223px;
       background-position: center;
       background-size: cover;
+      &.more {
+        background-color: #fff;
+        color: #000;
+        font-size: 18px;
+        display: table-cell;
+        vertical-align: middle;
+        cursor: pointer;
+        &:hover {
+          background-color: $warning-color;
+        }
+      }
     }
   }
   .inst-logo {
     width: 54px;
-    height: 54px;
-    background: url(images/1705.jpg);
-    position: relative;
-    margin: auto auto 40px auto;
-  }
-  .inst-crown {
-    width: 24px;
-    height: 19px;
-    background: url(images/3159.png);
-    position: relative;
-    margin: auto auto 5px auto;
+    height: 80px;
+    background: url(images/insta_logo.svg) no-repeat;
+    margin: auto auto 40px;
   }
 }
 

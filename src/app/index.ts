@@ -3,6 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {UIView, UIRouterModule} from 'ui-router-ng2';
 import {STATES, MyUIRouterConfig} from './routes';
 import {HttpModule} from '@angular/http';
+import {JsonpModule} from '@angular/http';
 import {ModalModule} from 'ng2-bootstrap/modal';
 import {MasonryModule} from 'angular2-masonry';
 import {DropdownModule} from 'ng2-bootstrap/dropdown';
@@ -26,6 +27,7 @@ import {BusinessComponent} from './business';
   imports: [
     BrowserModule,
     HttpModule,
+    JsonpModule,
     ModalModule.forRoot(),
     UIRouterModule.forRoot({states: STATES, configClass: MyUIRouterConfig}),
     MasonryModule,
