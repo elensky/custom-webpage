@@ -56,7 +56,7 @@ body {
 }
 
 .content {
-
+  padding-top: 70px;
 }
 
 .footer {
@@ -109,6 +109,7 @@ body {
   margin-bottom: 40px;
   position: relative;
   z-index: 10;
+  cursor: pointer;
   &:hover, &:focus {
     color: $danger-color;
   }
@@ -156,7 +157,7 @@ body {
 .main-menu {
   @extend .menu;
   font-size: $main-menu-font-size;
-  margin-bottom: 40px;
+  margin-bottom: 0;
 }
 
 .stickers-list {
@@ -262,9 +263,9 @@ $sticker-block-height: 348px;
 
 }
 .custom-top-menu {
-  height: 220px;
+  height: 100px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .custom-brand {
@@ -309,7 +310,7 @@ $sticker-block-height: 348px;
 }
 .right-item {
   margin-left: auto;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .custom-logo {
   position: absolute;
@@ -533,4 +534,16 @@ $sticker-block-height: 348px;
 }
 .padding-v-100 {
   padding-top: 100px;
+}
+
+.main-logo {
+  width: 600px;
+  height: 480px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: crosshair;
 }

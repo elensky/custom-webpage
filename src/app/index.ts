@@ -23,6 +23,7 @@ import {BuyModalComponent} from './buy_modal';
 import {DropdownComponent} from './dropdown';
 import {BusinessComponent} from './business';
 import {TagsPipe} from './tags_pipe';
+import {LogoComponent} from './logo';
 
 @NgModule({
   imports: [
@@ -50,7 +51,8 @@ import {TagsPipe} from './tags_pipe';
     BuyModalComponent,
     DropdownComponent,
     BusinessComponent,
-    TagsPipe
+    TagsPipe,
+    LogoComponent
   ],
   bootstrap: [UIView]
 })
