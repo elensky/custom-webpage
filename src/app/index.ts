@@ -4,9 +4,9 @@ import {UIView, UIRouterModule} from 'ui-router-ng2';
 import {STATES, MyUIRouterConfig} from './routes';
 import {HttpModule} from '@angular/http';
 import {JsonpModule} from '@angular/http';
-import {ModalModule} from 'ng2-bootstrap/modal';
+import {ModalModule} from 'ngx-bootstrap/modal';
 import {MasonryModule} from 'angular2-masonry';
-import {DropdownModule} from 'ng2-bootstrap/dropdown';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
@@ -33,7 +33,7 @@ import {LogoComponent} from './logo';
     ModalModule.forRoot(),
     UIRouterModule.forRoot({states: STATES, configClass: MyUIRouterConfig}),
     MasonryModule,
-    DropdownModule.forRoot()
+    BsDropdownModule.forRoot()
   ],
   declarations: [
     PageComponent,
