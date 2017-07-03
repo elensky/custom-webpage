@@ -8,10 +8,10 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /.json$/,
-        loaders: [
+        use: [
           'json-loader'
         ]
       },
@@ -23,7 +23,7 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loaders: [
+        use: [
           'style-loader',
           'css-loader',
           'sass-loader',
@@ -33,13 +33,13 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loaders: [
+        use: [
           'ts-loader'
         ]
       },
       {
         test: /.html$/,
-        loaders: [
+        use: [
           'html-loader'
         ]
       },

@@ -9,10 +9,10 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /.json$/,
-        loaders: [
+        use: [
           'json-loader'
         ]
       },
@@ -24,21 +24,25 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loaders: ExtractTextPlugin.extract({
-          fallbackLoader: 'style-loader',
-          loader: 'css-loader?minimize!sass-loader!postcss-loader?parser=postcss-scss'
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            { loader: 'css-loader', options: { importLoaders: 1, minimize: true } },
+            'sass-loader',
+            { loader: 'postcss-loader', options: { parser: 'postcss-scss', plugins: () => [autoprefixer] } }
+          ]
         })
       },
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loaders: [
+        use: [
           'ts-loader'
         ]
       },
       {
         test: /.html$/,
-        loaders: [
+        use: [
           'html-loader'
         ]
       },
@@ -69,7 +73,6 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
     new webpack.LoaderOptionsPlugin({
       options: {
-        postcss: () => [autoprefixer],
         resolve: {},
         ts: {
           configFileName: 'tsconfig.json'

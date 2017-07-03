@@ -2,10 +2,10 @@ const webpack = require('webpack');
 const conf = require('./gulp.conf');
 module.exports = {
   module: {
-    loaders: [
+    rules: [
       {
         test: /.json$/,
-        loaders: [
+        use: [
           'json-loader'
         ]
       },
@@ -18,13 +18,13 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        loaders: [
+        use: [
           'ts-loader'
         ]
       },
       {
         test: /.html$/,
-        loaders: [
+        use: [
           'html-loader'
         ]
       }
