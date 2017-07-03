@@ -20,7 +20,7 @@ import {AboutComponent} from './about';
 import {ShopComponent} from './shop';
 import {InstagramComponent} from './instagram';
 import {BuyModalComponent} from './buy_modal';
-import {DropdownComponent} from './dropdown';
+import {CustomDropdownComponent} from './dropdown';
 import {BusinessComponent} from './business';
 import {TagsPipe} from './tags_pipe';
 import {LogoComponent} from './logo';
@@ -49,7 +49,7 @@ import {LogoComponent} from './logo';
     ShopComponent,
     InstagramComponent,
     BuyModalComponent,
-    DropdownComponent,
+    CustomDropdownComponent,
     BusinessComponent,
     TagsPipe,
     LogoComponent

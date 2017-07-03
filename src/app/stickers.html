@@ -2,7 +2,8 @@
   <li><a (click)="setFilterTags([])" [ngClass]="{active: filterTags.length === 0}">all stuff</a></li>
   <li><a (click)="setFilterTags(['line'])" [ngClass]="{active: filterTags[0] === 'line'}">sticker line</a></li>
   <li><a (click)="setFilterTags(['page'])" [ngClass]="{active: filterTags[0] === 'page'}">stickerpage</a></li>
-  <li><a (click)="setFilterTags(['sticker'])" [ngClass]="{active: filterTags[0] === 'sticker'}">stickers</a></li>
+  <li><a (click)="setFilterTags(['sticker'])" [ngClass]="{active: filterTags[0] === 'sticker'}">sticker</a></li>
+  <li><a (click)="setFilterTags(['poster'])" [ngClass]="{active: filterTags[0] === 'poster'}">poster</a></li>
 </ul>
 
 <masonry [options]="{ columnWidth: 285 }">

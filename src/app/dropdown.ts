@@ -3,11 +3,11 @@ import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Component({
-  selector: 'dropdown',
+  selector: 'custom-dropdown',
   template: require('./dropdown.html')
 })
 
-export class DropdownComponent {
+export class CustomDropdownComponent {
   @Input() address: Address;
   public city;
   allAddresses: [CityAddresses];

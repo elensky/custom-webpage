@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Sticker} from './sticker';
+import * as _ from 'lodash';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class StickersComponent {
   filterTags: string[] = [];
 
   constructor(http: Http) {
-    http.get('stickers.json')
+    http.get('stickers.json?' + _.random(10000))
       .map(res => res.json())
       .subscribe(stickers => this.stickers = stickers);
   }

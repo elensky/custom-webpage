@@ -133,6 +133,10 @@ body {
         @extend .brand-line;
         margin-bottom: 0;
       }
+      &.custom-brand {
+        margin-bottom: 9px;
+        border-bottom: none;
+      }
     }
   }
 }
@@ -269,16 +273,19 @@ $sticker-block-height: 348px;
 }
 
 .custom-brand {
-  background: url(./images/1927.png) no-repeat;
-  height: 125px;
-  width: 130px;
-  margin: 0 60px;
-  display: inline-block;
-  cursor: pointer;
-  position: absolute;
-  top: 35px;
+  background: url(./images/crown-2.png) no-repeat;
+  height: 24px;
+  width: 30px;
+  vertical-align: middle;
+  filter: contrast(0) brightness(9999);
   &:hover {
-    background: url(./images/2303.png) no-repeat;
+    filter: none;
+  }
+  &.active {
+    filter: contrast(0);
+    &:hover {
+      filter: inherit;
+    }
   }
 }
 .soc-icon {
@@ -545,5 +552,4 @@ $sticker-block-height: 348px;
   top: -20px;
   margin-left: auto;
   margin-right: auto;
-  cursor: crosshair;
 }
